@@ -51,29 +51,29 @@ $$\hat{y} = X \cdot \theta$$
 
 ## **4. Installation & Setup**
 ### **a. Clone the repository**
-git clone https://github.com/scottford13/LTKHDL-Airbnb.git
+git clone https://github.com/scottford13/LTKHDL-Airbnb.git  
 cd LTKHDL-Airbnb
 ### **b. Install dependencies**
-pip install -r requirements.txt
+pip install -r requirements.txt  
 *Dependencies include: numpy, matplotlib, seaborn, jupyter.*
 
 ## **5. Usage**
 **Run the notebooks in the following order to reproduce the analysis**
 ### **a. Exploration**
-jupyter notebook notebooks/01_data_exploration.ipynb
+jupyter notebook notebooks/01_data_exploration.ipynb  
 *Visualizes distributions and correlations*
 ### **b. Preprocessing**
-jupyter notebook notebooks/02_preprocessing.ipynb
+jupyter notebook notebooks/02_preprocessing.ipynb  
 *Cleans data, encodes features, and saves train_data.csv / test_data.csv.*
 ### **c. Modeling**
-jupyter notebook notebooks/03_modeling.ipynb
+jupyter notebook notebooks/03_modeling.ipynb  
 *Trains the NumPy Linear Regression model and outputs metrics.*
 
 ## **6. Results**
 **Metrics**
 The model was evaluated on the test set using Root Mean Squared Error (RMSE) and R-squared ($R^2$):
 - RMSE (after inverse log transformation): 49.47 USD
-- $R^2$ Score: 0.4777
+- $R^2$ Score: 0.4777  
 **Visualizations**
 - Actual vs. Predicted: The model captures the general trend well, though it tends to underpredict high-end luxury listings (due to the "long tail" of prices).
 - Residuals: The residuals follow a bell-curve distribution, indicating the model errors are random and unbiased.
@@ -81,20 +81,20 @@ The model was evaluated on the test set using Root Mean Squared Error (RMSE) and
 
 ## **7. Project Structure**
 project-name/
-├── README.md               # Project documentation
-├── requirements.txt        # Python dependencies
-├── data/
-│   ├── raw/                # Original AB_NYC_2019.csv
-│   └── processed/          # Processed train/test CSV files
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_preprocessing.ipynb
-│   └── 03_modeling.ipynb
-└── src/
-    ├── __init__.py
-    ├── data_processing.py  # Helper functions for loading/cleaning
+├── README.md               # Project documentation  
+├── requirements.txt        # Python dependencies  
+├── data/  
+│   ├── raw/                # Original AB_NYC_2019.csv  
+│   └── processed/          # Processed train/test CSV files  
+├── notebooks/  
+│   ├── 01_data_exploration.ipynb  
+│   ├── 02_preprocessing.ipynb  
+│   └── 03_modeling.ipynb  
+└── src/  
+    ├── __init__.py  
+    ├── data_processing.py  # Helper functions for loading/cleaning  
     └── models.py           
-    └── visualization.py    
+    └── visualization.py      
 
 ## **8. Challenges & Solutions**
 | **Challenge**           | **Solution**                                                                                                                     |
