@@ -12,8 +12,7 @@ A mini-project for the course Programming for Data Science analyzes the New York
 8. Challenges & Solutions
 9. Future Improvements
 10. Contributors
-11. Contact
-12. License
+11. License
 
 ## **1. Introduction**
 Pricing an Airbnb rental is a complex task. Hosts want to maximize revenue without scaring away guests, while guests look for the best value. The core problem addressed in this project is to analyze and model the relationship between listing characteristics and rental prices, with the goal of identifying key factors that influence pricing and evaluating how well prices can be predicted using available features. This project's goal is to build a Linear Regression model from scratch using only NumPy (without Scikit-learn or Pandas) to predict the price of a listing.
